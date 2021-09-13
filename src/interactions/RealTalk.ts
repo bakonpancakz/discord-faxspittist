@@ -1,7 +1,8 @@
 import { CommandInteraction } from "discord.js";
+import { join } from "path";
 
 // Load Realktalk.json Strings
-const strings = require(__dirname + "/../../content/realtalk.json")
+const strings = require(join(__dirname, "/../../content/realtalk.json"))
 
 
 export default function (int: CommandInteraction) {

@@ -1,6 +1,7 @@
 import axios from "axios";
 import Bot from "./Client";
-const interactions = require("../../content/interactions.json")
+import { join } from "path";
+const interactions = require(join(__dirname, "/../../content/interactions.json"))
 
 
 Bot.on("ready", () => {

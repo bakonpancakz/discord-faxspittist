@@ -1,6 +1,7 @@
 import Client from "./Client";
 import { readdirSync } from "fs";
-const Location = __dirname + "/../interactions/";
+import { join } from "path";
+const Location = join(__dirname, "/../interactions/");
 const modules = {}
 
 // Load Interactions
