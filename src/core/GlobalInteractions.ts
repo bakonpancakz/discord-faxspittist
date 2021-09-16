@@ -1,13 +1,13 @@
 import axios from "axios";
-import Bot from "./Client";
 import { join } from "path";
+import Client from "./Client";
 const interactions = require(join(__dirname, "/../../content/interactions.json"))
 
 
-Bot.on("ready", () => {
+Client.on("ready", () => {
 
-    const axiosUrl = `https://discord.com/api/applications/${Bot.application.id}/commands`
-    const axiosOptions = { "headers": { "Authorization": `Bot ${Bot.token}` } }
+    const axiosUrl = `https://discord.com/api/applications/${Client.application.id}/commands`
+    const axiosOptions = { "headers": { "Authorization": `Bot ${Client.token}` } }
 
 
     // Create Command Interaction
@@ -50,6 +50,6 @@ Bot.on("ready", () => {
         })
 
 
-    // Bot Ready :)
+    // Client Ready :)
     console.info("[Client] Ready!")
 });
