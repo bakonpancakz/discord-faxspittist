@@ -14,7 +14,7 @@ If your interactions do not appear, you can attempt kicking and reinviting your 
 
 ## ⛰ Environment
 ```s
-TOKEN_FAXSPIT="<Discord Bot Token>"
+TOKEN_FAXSPITTIST="<Discord Bot Token>"
 WEBHOOK_FAXSPITTIST="<Discord Webhook URL>" [Optional]
 ```
 

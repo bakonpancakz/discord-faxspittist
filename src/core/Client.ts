@@ -12,6 +12,6 @@ if (process.env.WEBHOOK_FAXSPITTIST) intentSet.add("GUILDS")
 const BotClient = new Client({
     intents: Array.from(intentSet.values)   // Convert Set => Array
 });
-BotClient.login(process.env.TOKEN_FAXSPIT);
+BotClient.login(process.env.TOKEN_FAXSPITTIST);
 
 export default BotClient;
