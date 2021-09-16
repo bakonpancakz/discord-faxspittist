@@ -1,19 +1,22 @@
-`FaxSpittist` is a motivational Discord Bot designed to keep its users happy and motivated.
-
-
-## Steps on Hosting `FaxSpittist`
-
-1. Clone This repository
-2. Install dependencies
-3. Set the environment variable `TOKEN_FAXSPIT` to your very own **Bot Token**. 
+## 🖥 Running Locally
+1. Clone Repository
+2. Install `npm` dependencies
+3. [Environment Variables](#⛰-environment)
 4. `npm start`
+5. Invite with scopes `bot` & `applications.commands`
+
 
 ## ❓ Interactions
 `FaxSpittist` automatically sets its global interactions on startup. 
 
-If you do not see the commands, I recommend kicking and reinviting your bot again, forcing Discord to refresh the global interactions.
+If your interactions do not appear, you can attempt kicking and reinviting your bot. Doing this will force Discord to refresh its global interactions.
 
-Note: Considering we are using interactions, no permissions are required for `FaxSpittist` to operate.
+
+## ⛰ Environment
+```s
+TOKEN_FAXSPIT="<Discord Bot Token>"
+WEBHOOK_FAXSPITTIST="<Discord Webhook URL>" [Optional]
+```
 
 
 ## ✍ Contributing

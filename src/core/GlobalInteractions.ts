@@ -28,12 +28,12 @@ Bot.on("ready", () => {
                     axios.post(axiosUrl, int, axiosOptions)
 
                         .then(() => {
-                            console.info(`Set Global Command: ${int.name}`)
+                            console.info(`[GlobalInteractions] Set Global Command: ${int.name}`)
                         })
 
                         // Send Error Message to Console
                         .catch(err => {
-                            console.error(`Failed to Set Global Command: ${int.name}`, err)
+                            console.error(`[GlobalInteractions] Failed to Set Global Command: ${int.name}`, err)
                         })
 
                 }
@@ -51,5 +51,5 @@ Bot.on("ready", () => {
 
 
     // Bot Ready :)
-    console.info("Bot Ready!")
+    console.info("[Client] Ready!")
 });

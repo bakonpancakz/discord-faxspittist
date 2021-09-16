@@ -15,7 +15,7 @@ readdirSync(Location).forEach(filename => {
 
         // Store Module in Object
         modules[moduleName] = module
-        console.info("Loaded Module:", filename)
+        console.info("[InteractionHandler] Loaded Module:", filename)
     }
 })
 
