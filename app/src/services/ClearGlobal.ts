@@ -5,8 +5,9 @@ import Client from '../core/Client'
 const fileLocation = './.clearglobal'
 
 Client.on('ready', async () => {
+
     //? Check if Global Commands should be checked
-    if (process.env.FAX_SKIPGLOBAL || fs.readFileSync(fileLocation))
+    if (process.env.FAX_SKIPGLOBAL || fs.existsSync(fileLocation))
         return console.debug('[CLRGBL] Global commands previously cleared, skipping...')
 
     console.debug('[CLRGBL] Checking for Global Commands')
