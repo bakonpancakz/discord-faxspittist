@@ -1,23 +1,37 @@
-## 🖥 Running Locally
-1. Clone Repository
-2. Install `npm` dependencies
-3. [Environment Variables](#⛰-environment)
-4. `npm start`
-5. Invite with scopes `bot` & `applications.commands`
+## ⏩ Running Locally
 
+### **Required Software**
+|  Software  |       Version       |
+| :--------: | :-----------------: |
+|  Node.js   | v16.13.0 or greater |
+| Discord.js | v13.1.0 or greater  |
+|   Redis    |  v6.2.0 or greater  |
 
-## ❓ Interactions
-`FaxSpittist` automatically sets its global interactions on startup. 
+<br>
 
-If your interactions do not appear, you can attempt kicking and reinviting your bot. Doing this will force Discord to refresh its global interactions.
+### **Install Steps**
+|       |                                             |                                         |
+| :---: | :-----------------------------------------: | :-------------------------------------: |
+|   1   |              Clone Repository               |  `git clone bakonpancakz/faxspittist`   |
+|   2   |            Install Dependencies             |                 `npm i`                 |
+|   3   | [Set Environment Variables](#⛰-environment) |                   N/A                   |
+|   4   |              Start faxspittist              |               `npm start`               |
+|   5   |           Invite your Discord bot           | Scopes: `bot` & `applications.commands` |
 
+<br>
 
-## ⛰ Environment
-```s
-TOKEN_FAXSPITTIST="<Discord Bot Token>"
-WEBHOOK_FAXSPITTIST="<Discord Webhook URL>" [Optional]
+## 🏔️ Environment
+```perl
+FAX_TOKEN="<Discord Bot Token>" # https://discord.com/developers/applications
+FAX_REDIS="<Redis URI>"         # Required for commands, will not run without
+NODE_ENV="production"           # Optional, Errors will cause app to quit
 ```
 
+## 🔐 Permissions
+Bot requires **admin** to view hidden channels, and **applications.commands** to create its slash commands.
+
+<br>
 
 ## ✍ Contributing
-You may contribute anything(code, images, text, etc.) to this project. After all, the world could use more positivity.
+You may contribute anything to this project. 
+After all, the world could use more positivity.
