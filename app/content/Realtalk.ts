@@ -1,4 +1,4 @@
-[
+export default [
     "Don't worry kiddo, one day someone is going to admire you for who you are. For the way you speak, the way you smile, the way you laugh at the smallest things. Trust me, it will happen. For now just breathe and enjoy life.",
     "There is so much to look foward to, please hang in there friend.",
     "Shout out to the cool, kind, and good-looking human being reading this! YOU are loved and deserve to be loved, just the way you are. Keep smiling.",
@@ -8,7 +8,7 @@
     "Stop and think about all the people you secretly admired. All the people who you've found attractive, but never said a word to. All the people you've had a temporarily crush on while riding public transportation. All the people you've dreamt of and thought of early in the morning Now take a moment a realize, you've been this person for many people, and you have no idea.",
     "Its crazy how you're over here doubting yourself while so many people are afraid of your potiential.",
     "The impact you make on others is bigger than you think. Someone laughs every time they think of that funny thing you said. Someone smiles when they think of that compliment you gave them. Someone secretly admires you. Someone appreciates the love and support you give them. You're not insignificant in any way. Your existence makes a positive difference whether you see it or not.",
-    "No matter how much you miss a toxic person, please don't contact them. They're not worth your time, you'll just be sad again. We both know you deserve nothing but happiness. You don't ever need to feel drained and exhausted over someone..",
+    "No matter how much you miss a toxic person, please don't contact them. They're not worth your time, you'll just be sad again. We both know you deserve nothing but happiness. You don't ever need to feel drained and exhausted over someone.",
     "Learn to get back on track. When things go wrong, it don't really mean you've failed. It's normal to have days where you mess up, skip a work out, eat badly or ruin a perfect routine. and that's okay! It's all about being strong enough to forgive yourself and know that no matter how far you've gone in the wrong direction, you'll always have the chance to turn it around.",
     "Its okay if you thought you were over it but it hits you all over again. Its okay to fall apart even after you thought you had it under control. You are not weak. Healing is messy. There is no timeline for healing.",
     "If you notice yourself giving more energy than you recieve, step back.",
@@ -63,7 +63,7 @@
     "You can leave a toxic relationship/friendship but if you don't heal what attracted you to them, youll eventually face the same consequence. The same toxic traits but in a different person.",
     "You are important and special and loved even when your mind tells you you're not.",
     "Dont ever forget to remind people who you are just incase they get a little bit too comfortable.",
-    "You are so used to your own looks, you dont know how beautiful you look to a stranger..",
+    "You are so used to your own looks, you dont know how beautiful you look to a stranger.",
     "Don't give up, kiddo. There's a future version of youself whos proud of how strong you are.",
     "Go surround yourself with people who bring out the best in you.",
     "One day you'll back and you'll be proud of yourself.",
