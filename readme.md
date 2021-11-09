@@ -1,5 +1,4 @@
 ## ⏩ Running Locally
-
 ### **Required Software**
 |  Software  |       Version       |
 | :--------: | :-----------------: |
@@ -7,9 +6,7 @@
 | Discord.js | v13.1.0 or greater  |
 |   Redis    |  v6.2.0 or greater  |
 
-<br>
-
-### **Install Steps**
+### **Installation Steps**
 |       |                                             |                                         |
 | :---: | :-----------------------------------------: | :-------------------------------------: |
 |   1   |              Clone Repository               |  `git clone bakonpancakz/faxspittist`   |
@@ -18,7 +15,6 @@
 |   4   |              Start faxspittist              |               `npm start`               |
 |   5   |           Invite your Discord bot           | Scopes: `bot` & `applications.commands` |
 
-<br>
 
 ## 🏔️ Environment
 ```perl
@@ -27,10 +23,10 @@ FAX_REDIS="<Redis URI>"         # Required for commands, will not run without
 NODE_ENV="production"           # Optional, Errors will cause app to quit
 ```
 
+
 ## 🔐 Permissions
 Bot requires **admin** to view hidden channels, and **applications.commands** to create its slash commands.
 
-<br>
 
 ## ✍ Contributing
 You may contribute anything to this project. 
