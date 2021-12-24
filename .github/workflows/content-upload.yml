@@ -1,0 +1,23 @@
+name: Upload Content
+
+on:
+  push:
+    branches: live
+    paths: content/**
+  workflow_dispatch:
+    
+jobs:
+  action:
+    name: Upload
+    runs-on: ubuntu-latest
+    steps:
+
+      # Setup Google Cloud SDK
+      - uses: google-github-actions/auth@v0
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+      - uses: google-github-actions/setup-gcloud@master
+
+      # Upload Content to Google Cloud Bucket
+      - name: Upload to Cloud Bucket
+        run: gsutil -m cp -r content/* gs://faxspittist-content/

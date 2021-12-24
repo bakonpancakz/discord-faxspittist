@@ -1,0 +1,26 @@
+name: Deploy Worker
+
+on:
+  push:
+    branches: live
+    paths: worker/** 
+  workflow_dispatch:
+    
+jobs:
+  action:
+    name: Deploy Worker
+    runs-on: ubuntu-latest
+    steps:
+
+      # Publish Cloudflare Wrangler
+      - uses: actions/checkout@v2
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: 'production'
+          workingDirectory: 'worker'
+
+      # Deploy Structures
+      - name: Deploy Structure(s)
+        run: curl -X PATCH ${{ secrets.CF_WORKER_URL }}/deploy

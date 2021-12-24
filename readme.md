@@ -1,33 +1,32 @@
-## ⏩ Running Locally
-### **Required Software**
-|  Software  |       Version       |
-| :--------: | :-----------------: |
-|  Node.js   | v16.13.0 or greater |
-| Discord.js | v13.1.0 or greater  |
-|   Redis    |  v6.2.0 or greater  |
-
-### **Installation Steps**
-|       |                                             |                                         |
-| :---: | :-----------------------------------------: | :-------------------------------------: |
-|   1   |              Clone Repository               |  `git clone bakonpancakz/faxspittist`   |
-|   2   |            Install Dependencies             |                 `npm i`                 |
-|   3   | [Set Environment Variables](#⛰-environment) |                   N/A                   |
-|   4   |              Start faxspittist              |               `npm start`               |
-|   5   |           Invite your Discord bot           | Scopes: `bot` & `applications.commands` |
-
-
-## 🏔️ Environment
-```perl
-FAX_TOKEN="<Discord Bot Token>" # https://discord.com/developers/applications
-FAX_REDIS="<Redis URI>"         # Required for commands, will not run without
-NODE_ENV="production"           # Optional, Errors will cause app to quit
-```
-
-
-## 🔐 Permissions
-Bot requires **admin** to view hidden channels, and **applications.commands** to create its slash commands.
-
-
-## ✍ Contributing
-You may contribute anything to this project. 
-After all, the world could use more positivity.
+<div style="padding:24px 12px;" align="center">
+    <!-- Profile Header -->
+    <div style="display:flex; justify-content:center;">
+        <img src="https://i.imgur.com/u4TeVKQ.gif" style="height:90px; border-radius:15%; margin-right:16px;">
+        <h1>fax spittist</h1>
+    </div>
+    </>
+    </>
+    </>
+    <!-- Divider --><br>
+    <div style="width:100%; height:2px; border:2px solid #505050;"></div>
+    </>
+    </>
+    </>
+    <!-- /fax Ad --><br>
+    <h3>Get Facts straight from the goat</h3>
+    <p>Fax spittist has over 100 images that feature real dudes with hard captions. Keeping it real with each image.</p>
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+        <img src="https://i.imgur.com/6f4N9rZ.jpg" style="height:auto; width:33%;">
+        <img src="https://i.imgur.com/m1aVkc9.jpg" style="height:auto; width:33%;">
+        <img src="https://i.imgur.com/kZOd6Zv.jpg" style="height:auto; width:33%;">
+    </div>
+    </>
+    </>
+    </>
+    <!-- /realtalk ad --><br>
+    <h3>Realtalk with the goat</h3>
+    <p>Fax spittist has over 50+ different lines. Keeping it 💯 by telling you how it is.</p>
+    <code>You spend most of your life inside your head. So make it a nice place to be.</code>
+    <br><code>If you notice yourself giving more energy than you recieve, step back.</code>
+    <br><code>In order to love who you are, you can not hate the experiences that shaped you.</code>
+</div>

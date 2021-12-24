@@ -1,0 +1,23 @@
+# This wrangler.toml file is provided for debugging locally
+# Another config is used while being deployed by Github workflows
+webpack_config = "webpack.config.js"
+compatibility_date = "2021-12-23"
+name = "faxspittist"
+type = "javascript"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "CFKV"
+id = "ab3c3b98189c44cdb6586c798c08d036"
+preview_id = "7000738d41884d33bd4b2a01c7190a2c"
+
+[vars]
+APPLICATION_ID = "923549568015151134"
+APPLICATION_SECRET = "LlzpXVhQpGFiX33jdwIndfoGZ6Kh_zIe"
+APPLICATION_PUBLICKEY = "ad47096a32b413f77679721c29f15a65416ffe1b582c10c9a761c00080c9d015"
+BUCKET_URL = "https://storage.googleapis.com/faxspittist-content/fax-images/"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"

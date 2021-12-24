@@ -1,4 +1,4 @@
-export default [
+export const RealMessages = [
     "Don't worry kiddo, one day someone is going to admire you for who you are. For the way you speak, the way you smile, the way you laugh at the smallest things. Trust me, it will happen. For now just breathe and enjoy life.",
     "There is so much to look foward to, please hang in there friend.",
     "Shout out to the cool, kind, and good-looking human being reading this! YOU are loved and deserve to be loved, just the way you are. Keep smiling.",
