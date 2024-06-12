@@ -1,4 +1,43 @@
-export const RealMessages = [
+import { InteractionResponseType } from "discord-interactions"
+import { CacheTTL, ToInteractionResponse } from "../Utils"
+import { FaxCommand } from "../typings"
+
+const Realtalk: FaxCommand = {
+    structure: {
+        name: "realtalk",
+        description: "🔊 Real Talk from the Goat"
+    },
+    command: async (int, env) => {
+        
+        // Fetch used item list
+        let key = `usable_realtalk_${int.guild_id}`
+        let usableList: Array<number> | null = await env.CFKV.get(key, 'json')
+        if (!usableList || usableList.length === 0) {
+            // Create new list of usable items
+            usableList = []
+            for (var x = 1; x <= Quotes.length; x++) usableList.push(x)
+        }
+
+        // Choose a Random Item
+        const QuoteId = usableList[Math.floor(Math.random() * usableList.length)];
+        const QuoteText = Quotes[QuoteId];
+
+        // Update List
+        usableList.splice(QuoteId, 1)
+        env.CFKV.put(key, JSON.stringify(usableList), { expirationTtl: CacheTTL })
+
+        // Respond to Interaction
+        return ToInteractionResponse({
+            type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+            data: {
+                content: QuoteText,
+            }
+        })
+    },
+}
+export default Realtalk
+
+const Quotes = [
     "Don't worry kiddo, one day someone is going to admire you for who you are. For the way you speak, the way you smile, the way you laugh at the smallest things. Trust me, it will happen. For now just breathe and enjoy life.",
     "There is so much to look foward to, please hang in there friend.",
     "Shout out to the cool, kind, and good-looking human being reading this! YOU are loved and deserve to be loved, just the way you are. Keep smiling.",

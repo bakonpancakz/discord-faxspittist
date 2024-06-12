@@ -1,2 +1,2 @@
 All content in this folder is public and available at:
-https://storage.googleapis.com/faxspittist-content/<Your File Path>
+https://raw.githubusercontent.com/dotpwp/discord-faxspittist/main/content/<Your File Path>
